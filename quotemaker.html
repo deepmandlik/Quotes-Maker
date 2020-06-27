@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>Quotes Maker</title>
+	<!--Responsive-->
 	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
 	<!--html2canvas-->
     <script type="text/javascript" src="javascript/html2canvas.js"></script>
     <!--stylesheet-->
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
-	<!--Bootstrap -->
+	<!--Font Family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine|Anton|Holtwood+One+SC|Dancing+Script|Abril+Fatface|Orbitron|Shadows+Into+Light|Caveat">
+	<!--Bootstrap Stylesheet-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!--Bootstrap Javascript-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Font Awesome -->
@@ -17,8 +21,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
-    <!--Anime.js -->
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -45,6 +47,7 @@
 
 </nav>
 <div class="gap"></div>
+<!--Content-->
 <div class="background-box">
 	<div class="container">
 		<div class="editing"><!--Editor-box-->
@@ -174,16 +177,16 @@
 	  		    <p>Font size<br>
 	  			<input type="range" min="1" max="40" value="30" id="textfont" onchange="textFont();" class="sliderbig"></p>
 	  			<select class="font-family" onchange="fontFamily1();" id="fontfamily">
-	  			    <option value="0">Wide Latin</option>
-	  			    <option value="1">Vivaldi</option>
-	  			    <option value="2">Impact</option>
+	  			    <option value="0">Holtwood One SC</option>
+	  			    <option value="1">Tangerine</option>
+	  			    <option value="2">Anton</option>
 	  			    <option value="3">Times New Romen</option>
-	  			    <option value="4">Tw Cen MT</option>
-	  			    <option value="5">MS Gothic</option>
-	  			    <option value="6">Stencil</option>
-	  			    <option value="7">Rage</option>
-	  			    <option value="8">Pristina</option>
-	  			    <option value="9">Old English Text MT</option>
+	  			    <option value="4">Josefin Sans</option>
+	  			    <option value="5">Abril Fatface</option>
+	  			    <option value="6">Orbitron</option>
+	  			    <option value="7">Dancing Script</option>
+	  			    <option value="8">Shadows Into Light</option>
+	  			    <option value="9">Caveat</option>
 	  		    </select>
 	  		</div>
 	  		    <div class="flex margin1">
