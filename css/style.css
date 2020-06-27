@@ -4,7 +4,7 @@
 }
 .navbar{
 	box-shadow: none !important;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 }
 .navbar-toggler{
 	outline: none !important;
@@ -25,7 +25,7 @@
 	padding-right: 50px;
 	padding-left: 0px;
 	color: #000 !important;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 27px !important;
 }
 .nav-link{
@@ -45,10 +45,10 @@
 .content{
 	border-radius: 7px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 100px;
 	box-shadow: 0 0 2px #0003;
 	background-color: #fff;
-	height: 300vh;
+	height: auto !important;
 }
 .gap{
 	width: 100%;
@@ -58,7 +58,7 @@
 
 .background-box{
 	width: 100%;
-	height: 300vh;
+	height: auto !important;
 	background-color: #F9F9FB;
 }
 .highlight-text {
@@ -74,7 +74,7 @@
 }
 .highlight-text p{
 	margin: 15px 0px;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 20px;
 	color: #0007;
 }
@@ -94,12 +94,12 @@
 	margin: 62px 0px 50px 0px;
 }
 .highlight-statement p{
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 20px;
 	color: #0007;
 }
 .btnlg{
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 20px !important;
 }
 .box{
@@ -110,7 +110,7 @@
 	
 }
 .box h2{
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 25px;
 	color: #0008;
 	margin-top: 15px;
@@ -137,7 +137,7 @@
 	color: #0009; 
 }
 .line-text-p p{
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 20px;
 	color: #0007; 
 	text-align: center;
@@ -191,7 +191,7 @@
 }
 .card-text1{
 	transform: translateY(-75%);
-	font-family: "Tw Cen MT";
+	font-family: "Josefin Sans",sans-serif;
 }
 .bol{
 	font-weight: bold;
@@ -204,7 +204,7 @@
 	padding: 0px 30px 20px 30px ;
 }
 .high-p{
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 20px;
 	color: #0007;
 	margin-top: 10px;
@@ -213,7 +213,7 @@
 }
 @media only screen and (max-width: 350px){
     .navbar-brand{
-    	font-size: 25px !important;
+    	font-size: 22px !important;
     }
 
     .illustrate .image{
@@ -231,9 +231,6 @@
 	}
 	.line-text h1{
 		font-size: 23px;
-	}
-	.background-box ,.content{
-		height: 850vh;
 	}
 	.btn{
 		font-size: 16px !important;
@@ -264,9 +261,6 @@
 	}
 	.line-text h1{
 		font-size: 25px;
-	}
-	.background-box ,.content{
-		height: 740vh;
 	}
 	.templatemargin{
 		margin-top: 120px;
@@ -307,9 +301,6 @@
 	.line-text h1{
 		font-size: 25px;
 	}
-	.background-box ,.content{
-		height: 720vh;
-	}
 	.templatemargin{
 		margin-top: 110px;
 	}
@@ -349,9 +340,6 @@
 	.line-text h1{
 		font-size: 26px;
 	}
-	.background-box ,.content{
-		height: 690vh;
-	}
 	.templatemargin{
 		margin-top: 140px;
 	}
@@ -367,15 +355,17 @@
 		transform: translateY(-140%);
 	}
 }
+@media only screen and (max-width: 505px) and (min-width: 450px){
+	 .illustrate .image{
+		width: 415px !important;
+    }
+}
 @media only screen and (max-width: 767px) and (min-width: 450px){
 	.line-text{
 		margin: 20px 45px;
 	}
 	.btn{
 		font-size: 20px !important;
-	}
-	.background-box ,.content{
-		height: 600vh;
 	}
 	.line-text{
 		margin: 35px 35px 10px 35px;
@@ -389,11 +379,6 @@
 	}
 	.img{
 		transform: translateY(-20%);
-	}
-}
-@media only screen and (max-height: 900px) and (min-height: 766px){
-	.background-box ,.content{
-		height: 630vh;
 	}
 }
 
@@ -432,6 +417,9 @@
 	}
 	.img{
 		width:190px;
+	}
+	.card-text1{
+		transform: translateY(0%);
 	}
 }
 @media only screen and (max-width: 1200px) and (min-width:1000px){
