@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes Maker</title>
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+	<!--html2canvas-->
+    <script type="text/javascript" src="javascript/html2canvas.js"></script>
+    <!--stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<!--Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <!--Anime.js -->
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  
+  <a class="navbar-brand" href="#" class="brand">&nbsp;<img src="img/logo.jpg" class="logo"> <span class="heading">QuotesCover</span></a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="img/toggle.jpg">
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">&nbsp;&nbsp;Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bb" href="quotemaker.html">&nbsp;&nbsp;Quotes Maker</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">&nbsp;&nbsp;About</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<div class="gap"></div>
+<div class="background-box">
+	<div class="container">
+		<div class="editing"><!--Editor-box-->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="icons">
+						<div class="col-flex margin-right">
+						 <h5 onclick="text();" id="text-back" class="margin-left">Text</h5>
+						 <h5 onclick ="background();" id="background-back">Background</h5>
+						 <h5 onclick="filter();" id="filter-back" class="margin-left">Filter</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-flex">
+						<div class="edit">
+							<div id="cont">
+							</div>
+						</div>
+				</div>
+				<div class="col-md-8 transform" style="display: flex;justify-content: center;">
+					    <div class="template-body">
+						   <div class="template">
+				              <div id="card">
+				              	    <img id="card-image"  width="300" height="480">
+				              		<img id="img"  width="300" height="480">
+				              		
+				              		<div id="card-gradient"></div>
+				              		<div id="card-color"></div>
+				              		<div id="dark"></div>
+				              		<img id="border" width="300" height="480">
+				                    <div id="card-text">
+				              			<div id="main-text" onmouseover ="dragmainText();">Every moment is a fresh beginning.</div><br><br>
+				              			<div id="author-text" onmouseover ="dragauthorText();">deep mandlik</div>
+				              		</div>
+				              </div>
+						   </div><br>
+					       <div class="button">
+						   <button type="button" class="btn btn-info" onclick="download();">Download</button>
+					       </div>
+					    </div>   
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gap"></div>
+<div>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">QuotesCover.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+<!--text-Editor-->
+<div id="text">
+    <div class ="text-editing">
+	  <div class="text">
+	  	<div class="text-high">
+	  	<p>TEXT PROPERTIES</p>
+	  	</div>
+	  	<div class="content">
+	  		<div>
+	  		<textarea class="textarea" rows="10" id="quotetext" cols="20" placeholder="write your quote...." oninput ="writeText();"></textarea>
+	  		<div class="properties">
+	  			<span class="icon" onclick="leftAlign();"><img src="img/left-align.png" width="20"></span>
+	  			<span class="icon" onclick="centerAlign();"><img src="img/center-align.png" width="20"></span>
+	  			<span class="icon" onclick="rightAlign();"><img src="img/right-align.png" width="20"></span>
+	  			<span class="icon" onclick="bold();"><b>B</b></span>
+	  			<span class="icon" onclick="italic();"><i>I</i></span>
+	  			<span class="icon" onclick="underline();"><u>U</u></span>
+	  			<span class="icon" onclick="highlight();">" "</span>
+	  		</div>
+	  		<div class="margin">
+	  		    <p>Font size<br>
+	  			<input type="range" min="1" max="40" value="30" id="textfont" onchange="textFont();" class="sliderbig"></p>
+	  			<select class="font-family" onchange="fontFamily1();" id="fontfamily">
+	  			    <option value="0">Wide Latin</option>
+	  			    <option value="1">Vivaldi</option>
+	  			    <option value="2">Impact</option>
+	  			    <option value="3">Times New Romen</option>
+	  			    <option value="4">Tw Cen MT</option>
+	  			    <option value="5">MS Gothic</option>
+	  			    <option value="6">Stencil</option>
+	  			    <option value="7">Rage</option>
+	  			    <option value="8">Pristina</option>
+	  			    <option value="9">Old English Text MT</option>
+	  		    </select>
+	  		</div>
+	  		    <div class="flex margin1">
+	  		        <div>
+	  		             <p>Letter Spacing<br>
+	  		    	      <input type="range" min="1" max="8" value="2" id="letterspace" onchange="letterSpace();" class="slidersmall"></p>
+	  		    		   
+	  		    	</div>
+	  		    	<div>
+	  		    		<p>Word Spacing<br>
+	  		    	    <input type="range" min="1" max="8" value="2" class="slidersmall" id="wordspace" onchange="wordSpace();">
+	  		            </p>
+	  		        </div>
+	  		    </div>
+	  		     <div>
+	  		    	<p>Text Color<br><input type="color" name="" class="color big" value="#6E3302" id="textcolor" onchange="textColor();"></p>
+	  		    	      </div>
+	  		    </div>
+	  		    <div>
+	  		    	<p>Opacity<br>
+	  			    <input type="range" min="0" max="1" step="0.01" id="textopacity" onchange="textOpacity();" value="1" class="sliderbig"></p>
+	  		    </div>
+	  		    <div class="letter-border-properties">
+	  		    	<div class="letter-properties">
+	  		    	<span class="span" onclick="uppercase();">AA</span>
+	  		    	<span class="span" onclick="lowercase();">aa</span>
+	  		    	<span class="span" onclick="normal();">Aa</span>
+	  		    	<span class="text-shadow" onclick="textShadow();">A</span>
+	  		    	<span class="fill" onclick="fill();">A</span>
+	  		    	</div>
+	  		    </div>
+	  		    <div class="">
+	  		    	<textarea rows="5" cols="5" class="author-name"  id="authorname" oninput="authorName();"  placeholder="write author name..."></textarea>
+	  		    	<div class="flex">
+	  		    		<div><p>Text Color<br><input type="color" value="#6E3302" class="color" name="" id="author-color" onchange="authorColor();"></p></div>
+	  		    		<div><p>Font Size<br><input type="range" min="1" max="30" value="15" class="slidersmall margin12" id="author-size" name="" onchange="authorSize();"></p></div>
+	  		    	</div>
+	  		    </div>
+	      </div>
+	  	</div>
+	  </div>  
+    </div>
+</div>
+
+<!--background-->
+<div id="background">
+	<div class="background-editing">
+		<div class="background">
+			<div class="text-high">
+	  	    <p>OVERLAY COLOR</p>
+	  	    </div>
+	  	   <div class="content">
+	  	   	<div class="overlay-color">
+	  	   		<div class="flex">
+	  	   			<div><button class="button-color" id="solid" onclick="solidColor();">Solid Color</button></div>
+	  	   			<div><button class="button-color" id="gradient" onclick="gradient();">Gradient</button></div>
+	  	   		</div>
+	  	   		<div class="color-box">
+	  	   			<div id="replace">
+	  	   				<div id="solid-color">
+	                      <div class="center">
+	                      	<p>Solid Color<br>
+	                      	<input type="color" name="" class="color big" value="#F0E394" id="solidcolor" onchange="getSolidColor();"></p>
+	                      	 <p>Opacity<br>
+	                      	<input type="range" min="0" max="1" step="0.01" value="0.6" class="sliderbig" id="solid-color-opacity" onchange="getSolidColor();"></p>
+	                      </div>
+                        </div>
+                    </div>
+                </div>
+	  	   	</div>
+	  	   </div>
+	  	   <div class="text-high">
+	  	    <p>IMAGE</p>
+	  	    </div>
+	  	    <div class="content">
+	  	    	<div class="flex">
+	  	    	  <div>
+	  	    		<label class="upload">
+                      <img src="img/upload.png">&nbsp;&nbsp;Upload Photo<input type="file" accept="image/*" name="" onchange="readImg(event);" style="display: none;">
+                    </label>
+	  	    	  </div>
+	  	        </div>
+	  	    	<div class="image">
+	  	    		<div class="flex">
+	  	    			<div class="image-size" onclick="image1();"><img id="image1" width="115" height="140"></div>
+	  	    			<div class="image-size" onclick="image2();"><img id="image2" width="115" height="140"></div>
+	  	    		</div><br>
+	  	    		<div class="flex">
+	  	    			<div class="image-size" onclick="image3();"><img id="image3" width="115" height="140"></div>
+	  	    			<div class="image-size" onclick="image4();"><img id="image4" width="115" height="140"></div>
+	  	    		</div><br>
+	  	    		<div class="flex">
+	  	    			<div class="image-size" onclick="image5();"><img id="image5" width="115" height="140"></div>
+	  	    			<div class="image-size" onclick="image6();"><img id="image6" width="115" height="140"></div>
+	  	    		</div><br>
+	  	    			<div class="flex">
+	  	    			<div class="image-size" onclick="image7();"><img id="image7" width="115" height="140"></div>
+	  	    			<div class="image-size" onclick="image8();"><img id="image8" width="115" height="140"></div>
+	  	    		</div><br>
+	  	    			<div class="flex">
+	  	    			<div class="image-size" onclick="image9();"><img id="image9" width="115" height="140"></div>
+	  	    			<div class="image-size" onclick="image10();"><img id="image10" width="115" height="140"></div>
+	  	    		</div>
+	  	    	</div>
+	  	    </div>
+		</div>
+	</div>
+</div>
+
+
+<div id="linear-gradient">
+	<div class="flex">
+		<div>
+			<p>Color1<br><input type="color" class="color" name="" value="#000" id="gradient1"  onchange="getGradient();"></p>
+	    </div>
+		<div>
+			<p>Color2<br><input type="color" class="color" name="" value="#0593FF" id="gradient2" onchange="getGradient();"></p>
+		</div>
+	</div>
+	<div class="flex">
+		<div>
+			<p>Opacity<br>
+	        <input type="range" min="0" max="1" value="1" step="0.01" class="sliderbig" id="opacitygradient" onchange="getGradient();"></p>
+	    </div>
+	</div>
+	<p>Rotate Gradient<br>
+	<input type="range" min="0" max="360" step="1" value="90" class="sliderbig" id="gradientDeg" onchange="getGradient();"></p>
+</div>
+
+
+
+
+<div id="filter">
+	<div class="filter-editing">
+		<div class="filter">
+			<div class="text-high">
+	  	    <p>poster effect</p>
+	  	    </div>
+	  	    <div class="content">
+	  	       <div class="img-effect">
+	  	       	<div class="flex size">
+	  	       		<div class="center cc" onclick="imageOnly();"><img src="img/bg1.gif" width="40" id="imgbigimg"><br>Image<br>Only</div>
+	  	       		<div class="center cc" onclick="darkenImg();"><img src="img/bg2.gif" width="40" id="imgbigdark"><br>Darken<br>Image</div>
+	  	       		<div class="center cc" onclick="blurImg();"><img src="img/bg8.gif" width="40" id="imgbigblur"><br>Blur<br>Effect</div>
+	  	       	</div>
+	  	       	<div class="flex size margin1">
+	  	       		<div class="center cc" onclick="fullGradient1();"><img src="img/bg5.gif" width="40" id="imgbiggrad"><br>Full<br>Gradient</div>
+	  	       		<div class="center cc" onclick="solidColor1();"><img src="img/bg4.gif" width="40" id="imgbigsolid"><br>Solid<br>Color</div>
+	  	       		<div class="center cc" onclick="gradientOverlay();"><img src="img/bg3.gif" width="40" id="imgbigoverlay"><br>Gradient<br>Overlay</div>
+	  	       	</div>
+	  	       </div><br>
+	  	       <div class="random-frames" onclick="getBorder();"><p>Random Frames</p></div><br>
+	  	       <p class="tt">TEXT EFFECT'S COLLECTION</p>
+	  	       <div class="text-effect">
+	  	       	<div class="b-border"><p class="style1">"Happiness is unique, it cannot be generalized"</p><button type="button" class="btn btn-success btn-rounded" onclick="textEffect1();">Apply</button></div>
+	  	       	<div class="b-border"><p class="style2">"It is never too late to give up your prejudices"</p><button type="button" class="btn btn-success btn-rounded" onclick="textEffect2();">Apply</button></div>
+	  	       	<div class="b-border"><p class="style3">"Prejudice is the child of ignorance"</p><button type="button" class="btn btn-success btn-rounded" onclick="textEffect3();">Apply</button></div>
+	  	       	<div class="b-border"><p class="style4">"The greatest problem in the world today is intolerance"</p><button type="button" class="btn btn-success btn-rounded" onclick="textEffect4();">Apply</button></div>
+	  	       </div>
+	  	    </div>
+	  	</div>
+	</div>
+</div>
+<script type="text/javascript" src="javascript/java.js"></script>
+</body>
+</html>
