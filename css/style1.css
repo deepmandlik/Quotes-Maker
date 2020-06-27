@@ -4,7 +4,7 @@
 }
 .navbar{
 	box-shadow: none !important;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 }
 .navbar-toggler{
 	outline: none !important;
@@ -25,7 +25,7 @@
 	padding-right: 50px;
 	padding-left: 0px;
 	color: #000 !important;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 	font-size: 27px !important;
 }
 .nav-link{
@@ -49,14 +49,14 @@
 }
 .background-box{
 	width: 100%;
-	height: 700px;
+	height: auto !important;
 	background-color: #F9F9FB;
 }
 .editing{
 	border-radius: 7px;
 	box-shadow: 0 0 2px #0003;
 	background-color: #fff;
-	height: 640px;
+	height: auto !important;
 }
 .icons{
 	background-color:#E8E8F5;
@@ -66,8 +66,8 @@
 .icons h5{
 	display: inline-block;
 	padding: 11px 15px 5px;
-	margin-left: 20px;
-	font-family: "Tw Cen MT" !important;
+	margin-left: 15px;
+	font-family: "Josefin Sans",sans-serif !important;
 	color: #fff;
 	background-color:#B29FE7;
 	border-top-left-radius: 15px;
@@ -121,7 +121,7 @@
     position: relative;
 	z-index: 1000;
     padding: 20px 25px 10px;
-     font-family: "Wide Latin";
+     font-family: "Holtwood One SC";
      margin-left: 10px;
 }
 #main-text{
@@ -270,14 +270,34 @@
 	cursor: pointer;
 }
 .sliderbig{
-	  outline: none;
-  box-shadow: inset 0 0 2px #0005;
-  -webkit-appearance:none;
-  overflow: hidden;
-  border-radius: 8px;
-  width: 246px;
-  cursor: pointer;
+    -webkit-appearance: none;
+    width: 246px !important;
+    height: 15px;
+    cursor: pointer;
 }
+
+.sliderbig::-webkit-slider-runnable-track {
+    
+    
+    box-shadow: inset 0 0 2px #0005;
+   -webkit-appearance:none;
+   overflow: hidden !important;
+    border-radius: 8px;
+}
+
+.sliderbig::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: blue;
+
+}
+.sliderbig:focus {
+    outline: none;
+}
+
+
 .margin{
 	margin-top:15px;
 }
@@ -290,14 +310,32 @@
 	outline: none;
 }
 .slidersmall{
-outline: none;
-  box-shadow: inset 0 0 2px #0005;
-  -webkit-appearance:none;
-  overflow: hidden;
-  border-radius: 8px;
-  width: 100px;
-  cursor: pointer;
- }
+    -webkit-appearance: none;
+    width: 100px !important;
+    height: 15px;
+    cursor: pointer;
+}
+
+.slidersmall::-webkit-slider-runnable-track {
+    
+    
+    box-shadow: inset 0 0 2px #0005;
+   -webkit-appearance:none;
+   overflow: hidden !important;
+    border-radius: 8px;
+}
+
+.slidersmall::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: blue;
+
+}
+.slidersmall:focus {
+    outline: none;
+}
  .margin1{
  	margin-top:24px; 
  }
@@ -462,14 +500,14 @@ outline: none;
 .tt{
 	transform: translateY(-40%);
 	text-align: center;
-	font-family: "Tw Cen MT" !important;
+	font-family: "Josefin Sans",sans-serif !important;
 }
 .text-effect{
      text-align: center;
      	border-top: 1px solid #D9D7D7;
 	 border-bottom: 1px solid #D9D7D7;
 	 transform: translateY(-5%);
-	 font-family: "Tw Cen MT" !important;
+	 font-family: "Josefin Sans",sans-serif !important;
 }
 .btn-rounded{
 	border-radius: 15px !important;
@@ -484,7 +522,7 @@ outline: none;
 }
 .style2{
 
-font-size: 20px;
+    font-size: 20px;
 	color: hsl(330, 100%, 50%) ;
 	text-shadow: -1px 2px  5px hsl(330, 100%, 25%),
              -1px 2px 4px  hsla(330, 100%, 15%, 0.5),
@@ -500,28 +538,28 @@ font-size: 20px;
              -1px 2px 2px  hsla(350, 100%, 15%, 0.5);
 }
 .style1{
-color: #54a;
-  text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
+    color: #54a;
+    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
   	font-size: 20px;
 }
 .style1c{
-  text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
+    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
 }
 .style3{
 	font-size: 20px;
-  color:#E85530 ;
-  text-shadow: -1px 1px 0px hsl(20, 100%, 16%),
+    color:#E85530 ;
+    text-shadow: -1px 1px 0px hsl(20, 100%, 16%),
               -2px 2px 0px hsl(20, 100%, 16%),
               -3px 3px 0px hsl(20, 100%, 16%);
 }
 .style3c{
-	  text-shadow: -1px 1px 0px hsl(20, 100%, 16%),
+	 text-shadow: -1px 1px 0px hsl(20, 100%, 16%),
               -2px 2px 0px hsl(20, 100%, 16%),
               -3px 3px 0px hsl(20, 100%, 16%);
 }
 .style4{
 	color: transparent;
-text-shadow: 
+    text-shadow: 
              -3px 3px hsla(0, 0%, 60%, .2),
              -2px 2px hsla(0, 0%, 70%, .2),
              -1px 1px hsla(0, 0%, 70%, .2),
@@ -529,7 +567,7 @@ text-shadow:
              1px -1px hsla(0, 0%, 30%, .6),
              2px -2px hsla(0, 0%, 30%, .7),
              3px -3px hsla(0, 0%, 32%, .8);
-      font-size: 20px;
+    font-size: 20px;
 
 }
 .style4c{
@@ -543,17 +581,14 @@ text-shadow:
              3px -3px hsla(0, 0%, 32%, .8);
 }
 
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 341px){
     .navbar-brand{  
-    	font-size: 25px !important;
+    	font-size: 22px !important;
     }
-    .background-box{
-		height: 700px;
-	}
 	.icons h5{
 		font-size: 15px;
-		margin-left: 15px;
-		margin-top: 7px;
+		margin-left: 21px;
+		margin-top: 6px;
 	}
     .content{
     	padding: 0px 2px;
@@ -575,17 +610,15 @@ text-shadow:
     .filter-editing::-webkit-scrollbar {
         width: 0;
     }
-      .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1100px;
-    }
 
 }
-@media only screen and (max-width: 362px) and (min-width: 340px){
+@media only screen and (max-width: 362px) and (min-width: 342px){
+
+	.margin-right{
+        margin-right: 10px !important;
+	}
 	.icons h5{
-		margin-left: 15px !important;
+		margin-left: 11px !important;
 		font-size: 20px;
 	}
     .edit{
@@ -605,16 +638,10 @@ text-shadow:
     .filter-editing::-webkit-scrollbar {
         width: 0;
     }
-    .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1100px;
-    }
 }
 @media only screen and (max-width: 395px) and (min-width: 362px){
     .icons h5{
-		margin-left: 18px !important;
+		margin-left: 20px !important;
 	}
     .edit{
     	width: 300px;
@@ -633,22 +660,10 @@ text-shadow:
     .filter-editing::-webkit-scrollbar {
         width: 0;
     }
-      .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1100px;
-    }
 }
 @media only screen and (max-width: 470px) and (min-width: 395px){
-	.background-box{
-		height: 725px;
-	}
 	.icons h5{
-		
-	}
-	.editing{
-		height: 660px;
+		margin-left: 20px !important;
 	}
 	.template{
 		margin-top: 20px;
@@ -670,12 +685,6 @@ text-shadow:
     .filter-editing::-webkit-scrollbar {
         width: 0;
     }
-      .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1100px;
-    }
 }
 @media only screen and (max-width: 767px) and (min-width: 470px){
     .body{
@@ -694,12 +703,6 @@ text-shadow:
     }
     .filter-editing::-webkit-scrollbar {
         width: 0;
-    }
-      .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1100px;
     }
       .edit{
     	width: 300px;
@@ -724,26 +727,9 @@ text-shadow:
     .filter-editing::-webkit-scrollbar {
         width: 0;
     }
-      .editing{
-    	height: 1050px;
-    }
-    .background-box{
-        height: 1300px;
-    }
     .transform{
     	transform: translateX(25%);
     }
-}
-
-@media only screen and (max-height: 567px) {
-   .background-box{
-		height: 240vh;
-	}
-}
-@media only screen and (max-height: 1400px) and (min-height:900px ) {
-   .background-box{
-		height: 110vh;
-	}
 }
 @media only screen and (max-width: 991px) {
 	.col-flex{
@@ -751,6 +737,6 @@ text-shadow:
 		justify-content: center;
 	}
 	.margin-right{
-        margin-right: 25px;
+        margin-right: 21px;
 	}
 }
